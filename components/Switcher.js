@@ -6,15 +6,13 @@ const Switcher = ({ y00tText, y00t, y00tDesc }) => {
   return (
     <>
       <Center
-        bg="black"
         h="25vh"
-        pt={10}
       >
         <Image
           src="/images/y00ts_banner.png"
           alt="y00ts"
-          width={996}
-          height={346}
+          width={300}
+          height={100}
         />
       </Center>
       <Center bg="#F0D055" h="25vh" color="white">

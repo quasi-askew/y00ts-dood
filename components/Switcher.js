@@ -1,13 +1,12 @@
 import Image from "next/image";
 import { Center, Text, Heading } from "@chakra-ui/react";
-import { motion } from "framer-motion";
+
+import Y00tLine from "./Y00tLine";
 
 const Switcher = ({ y00tText, y00t, y00tDesc }) => {
   return (
     <>
-      <Center
-        h="25vh"
-      >
+      <Center h="25vh">
         <Image
           src="/images/y00ts_banner.png"
           alt="y00ts"
@@ -15,17 +14,17 @@ const Switcher = ({ y00tText, y00t, y00tDesc }) => {
           height={100}
         />
       </Center>
-      <Center bg="#F0D055" h="25vh" color="white">
-        <Text>{y00tText}</Text>
-      </Center>
-      <Center bg="#FF5B32" h="25vh" color="white">
-        <Heading as="h1" size="4xl" noOfLines={1}>
-          {y00t}
-        </Heading>
-      </Center>
-      <Center bg="#597592" h="25vh" color="white">
-        {y00tDesc}
-      </Center>
+      <Y00tLine text={y00tText} bgcolor="#F0D055" color="white" />
+      <Y00tLine text={y00tDesc} bgcolor="#FF5B32" color="white" />
+      <Y00tLine text="coming soon" bgcolor="#597592" color="white" />
+      <Y00tLine text="social experiment" bgcolor="#F0D055" color="white" />
+      <Y00tLine text="trying shit" bgcolor="#FF5B32" color="white" />
+      <Y00tLine text="learning shit" bgcolor="#597592" color="white" />
+      <Y00tLine text="new frontiers" bgcolor="#F0D055" color="white" />
+      <Y00tLine text="soon" bgcolor="#FF5B32" color="white" />
+      <Y00tLine text="degenerates, punks, and misfits" bgcolor="#597592" color="white" />
+      <Y00tLine text="gods of the metaverse" bgcolor="#F0D055" color="white" />
+      <Y00tLine text="masters of our own universe" bgcolor="#FF5B32" color="white" />
     </>
   );
 };

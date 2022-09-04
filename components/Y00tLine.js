@@ -16,8 +16,10 @@ const Y00tLine = ({ text, color, bgcolor }) => {
       bg={bgcolor}
       h="25vh"
       color={color}
+      p={3}
+      justify="center"
     >
-      <Heading as="h2" size="4xl">
+      <Heading as="h2" size="2xl">
         {text}
       </Heading>
     </Center>
